@@ -1,0 +1,11 @@
+spring:
+
+ #数据库配置，非公共配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: zhang
+    password: 123456
+    url: jdbc:mysql://localhost:3306//zhang #'生产环境的数据库url'
+  session:
+    timeout: 86400 #一天多少秒，表示session的生存周期
+    store-type: redis # 设置服务器保存session的类型时候，可以选择redis
